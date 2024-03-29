@@ -1,0 +1,83 @@
+# © EnvyWare Ltd Software 2022
+# For assistance visit https://discord.envyware.co.uk
+
+broadcast-options:
+    one:
+        type: spawn
+        spec: shiny
+        nearest-player-radius: 30.0
+        broadcasts:
+        - '&8-------'
+        - '&a%pokemon% %nearest_name% %x%, %y%, %z%, %world%'
+        - '&8-------'
+        webhook: none
+        nearest-player-only: false
+    two:
+        type: spawn
+        spec: legendary
+        nearest-player-radius: 30.0
+        broadcasts:
+        - '&8-------'
+        - '&a%pokemon% %nearest_name% %x%, %y%, %z%, %world%'
+        - '&8-------'
+        webhook: none
+        nearest-player-only: false
+    three:
+        type: defeat
+        spec: legendary
+        nearest-player-radius: 30.0
+        broadcasts:
+        - '&8-------'
+        - '&a%pokemon% %nearest_name% %x%, %y%, %z%, %world%'
+        - '&8-------'
+        webhook: none
+        nearest-player-only: false
+placeholder-format:
+    name: '&b%species_name% %nickname%'
+    lore:
+    - '&7Level: &b%level%'
+    - '&7Shiny: &b%shiny%'
+    - '&7Palette: &b%palette%'
+    - '&7Gender: %gender%'
+    - '&7Breedable: %breedable%'
+    - '&7Friendship: %friendship%'
+    - '&7Nature: &b%nature%'
+    - '&7Form: &b%form%'
+    - '&7Growth: &b%size%'
+    - '&7Ability: &b%ability%'
+    - '&7Friendship: &b%friendship%'
+    - '&7Untradeable: &b%untradeable%'
+    - ' '
+    - '&7IVs (&b%iv_percentage%%&7):'
+    - '    §7HP: %iv_hp% §d| §7Atk: %iv_attack% §d| §7Def: %iv_defence%'
+    - '    §7SAtk: %iv_spattack% §d| §7SDef: %iv_spdefence% §d| §7Spd: %iv_speed%'
+    - ' '
+    - '&7EVs:'
+    - '    §7HP: &b%ev_hp% §d| §7Atk: &b%ev_attack% §d| §7Def: &b%ev_defence%'
+    - '    §7SAtk: &b%ev_spattack% §d| §7SDef: &b%ev_spdefence% §d| §7Spd: &b%ev_speed%'
+    - ' '
+    - '&7Moves:'
+    - '    &b%move_1%'
+    - '    &b%move_2%'
+    - '    &b%move_3%'
+    - '    &b%move_4%'
+    - ' '
+    - '%mew_cloned%'
+    - '%trio_gemmed%'
+    untrdeable-true-format: '&aTRUE'
+    untradeable-false-format: '&cFALSE'
+    ability-format: '%ability_name% %ability_ha%'
+    ha-format: '&7(&c&lHA&7)'
+    male-format: '&bMale'
+    female-format: '&dFemale'
+    none-format: '&fNONE'
+    shiny-true-format: '&aTRUE'
+    shiny-false-format: '&cFALSE'
+    unbreedable-true-format: '&aTRUE'
+    unbreedable-false-format: '&cFALSE'
+    mew-cloned-format: '&7Times Cloned: %cloned%'
+    gemmed-format: '&7Gemmed: %gemmed%'
+    nature-format: '%nature_name% %mint_nature%'
+    mint-nature-format: '&7(%mint_nature_name%&7)'
+    normal-iv-colour: '&b'
+    hyper-iv-colour: '&e'
